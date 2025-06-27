@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+// General Font Styles
+
+.italic {
+  font-style: italic !important;
+}
+
+// Border Radius mixin for rounded corners
+@mixin border-radius($radius) {
+  border-radius: $radius !important;
+}
+
+.rounded-sm {
+  @include border-radius(0.25rem);
+}
+
+.rounded-md {
+  @include border-radius(0.5rem);
+}
+
+.rounded-lg {
+  @include border-radius(0.75rem);
+}
+
+.rounded-xl {
+  @include border-radius(1rem);
+}
+
+.rounded-xxl {
+  @include border-radius(1.5rem);
+}
+
+// Font size mixin for responsive typography
+
+@mixin font-size($size) {
+  font-size: $size !important;
+}
+
+.fs-sm {
+  @include font-size(0.8rem);
+}
+
+.fs-md {
+  @include font-size(1.2rem);
+}
+
+.fs-lg {
+  @include font-size(1.5rem);
+}
+
+.fs-xl {
+  @include font-size(2rem);
+}
+
+.fs-xxl {
+  @include font-size(2.5rem);
+}
+
+// Font mixin for Montserrat
+
+@mixin montserrat($weight: 400) {
+  // Default weight set to 400
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+.montserrat-very-light {
+  @include montserrat(100);
+}
+
+.montserrat-extra-light {
+  @include montserrat(200);
+}
+
+.montserrat-light {
+  @include montserrat(300);
+}
+
+.montserrat {
+  @include montserrat();
+}
+
+.montserrat-medium {
+  @include montserrat(500);
+}
+
+.montserrat-semi-bold {
+  @include montserrat(600);
+}
+
+.montserrat-bold {
+  @include montserrat(700);
+}
+
+.montserrat-extra-bold {
+  @include montserrat(800);
+}
+
+.montserrat-black {
+  @include montserrat(900);
+}
+
+// Font mixin for Poppins
+
+@mixin poppins($weight: 400) {
+  // Default weight set to 400
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+.poppins-very-light {
+  @include poppins(100);
+}
+
+.poppins-extra-light {
+  @include poppins(200);
+}
+
+.poppins-light {
+  @include poppins(300);
+}
+
+.poppins {
+  @include poppins();
+}
+
+.poppins-medium {
+  @include poppins(500);
+}
+
+.poppins-semi-bold {
+  @include poppins(600);
+}
+
+.poppins-bold {
+  @include poppins(700);
+}
+
+.poppins-extra-bold {
+  @include poppins(800);
+}
+
+.poppins-black {
+  @include poppins(900);
+}
+
+// Font mixin for Roboto
+
+@mixin roboto($weight: 400) {
+  // Default weight set to 400
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+.roboto-very-light {
+  @include roboto(100);
+}
+
+.roboto-extra-light {
+  @include roboto(200);
+}
+
+.roboto-light {
+  @include roboto(300);
+}
+
+.roboto {
+  @include roboto();
+}
+
+.roboto-medium {
+  @include roboto(500);
+}
+
+.roboto-semi-bold {
+  @include roboto(600);
+}
+
+.roboto-bold {
+  @include roboto(700);
+}
+
+.roboto-extra-bold {
+  @include roboto(800);
+}
+
+.roboto-black {
+  @include roboto(900);
+}

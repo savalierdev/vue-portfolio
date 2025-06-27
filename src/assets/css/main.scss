@@ -1,0 +1,54 @@
+@import "header";
+@import "fonts";
+
+#to-do-app {
+  padding-block: 40px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: auto;
+
+  .todo-container {
+    width: 800px;
+    max-width: 1000px;
+    padding-inline: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #to-do-app {
+    display: flex;
+    justify-content: center;
+    padding-inline: 20px;
+    .todo-container {
+      width: 100%;
+    }
+  }
+}
+
+#dev-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
